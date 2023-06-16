@@ -10,7 +10,7 @@
                 <mxCell id="TVt1up-PX-hTX620gNFp-18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;align=center;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="DXMoOa7pvSuEpX1q4dn--15" target="DXMoOa7pvSuEpX1q4dn--19" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="DXMoOa7pvSuEpX1q4dn--15" value="获取当前【用户】【应用】的缓存归集ID列表" style="whiteSpace=wrap;html=1;strokeWidth=2;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
+                <mxCell id="DXMoOa7pvSuEpX1q4dn--15" value="获取【当前用户】的缓存归集ID列表" style="whiteSpace=wrap;html=1;strokeWidth=2;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
                     <mxGeometry x="640" y="573" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="DXMoOa7pvSuEpX1q4dn--54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;align=center;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="DXMoOa7pvSuEpX1q4dn--19" target="DXMoOa7pvSuEpX1q4dn--28" edge="1">
@@ -24,7 +24,7 @@
                 <mxCell id="DXMoOa7pvSuEpX1q4dn--19" value="列表长度&amp;gt;0" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
                     <mxGeometry x="640" y="683" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="DXMoOa7pvSuEpX1q4dn--26" value="关闭当前【定时器】&lt;br&gt;移除当前Record" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
+                <mxCell id="DXMoOa7pvSuEpX1q4dn--26" value="关闭当前【定时器】&lt;br&gt;移除定时器ID" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
                     <mxGeometry x="640" y="130" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="DXMoOa7pvSuEpX1q4dn--29" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;align=center;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="DXMoOa7pvSuEpX1q4dn--19" target="DXMoOa7pvSuEpX1q4dn--50" edge="1">
@@ -49,7 +49,7 @@
                 <mxCell id="DXMoOa7pvSuEpX1q4dn--34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;align=center;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="DXMoOa7pvSuEpX1q4dn--31" target="DXMoOa7pvSuEpX1q4dn--33" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="DXMoOa7pvSuEpX1q4dn--31" value="生成当前Record：&lt;br&gt;用户id+牌照+定时器id" style="whiteSpace=wrap;html=1;strokeWidth=2;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
+                <mxCell id="DXMoOa7pvSuEpX1q4dn--31" value="等待【定时器】触发" style="whiteSpace=wrap;html=1;strokeWidth=2;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
                     <mxGeometry x="640" y="351" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="DXMoOa7pvSuEpX1q4dn--32" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;align=center;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="DXMoOa7pvSuEpX1q4dn--13" target="DXMoOa7pvSuEpX1q4dn--31" edge="1">
@@ -58,7 +58,7 @@
                         <mxPoint x="1020" y="305" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="DXMoOa7pvSuEpX1q4dn--33" value="（等待时间结束）&lt;br&gt;触发【定时器】" style="whiteSpace=wrap;html=1;strokeWidth=2;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
+                <mxCell id="DXMoOa7pvSuEpX1q4dn--33" value="获取【当前用户】：&lt;br&gt;用户id+牌照" style="whiteSpace=wrap;html=1;strokeWidth=2;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
                     <mxGeometry x="640" y="462" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="DXMoOa7pvSuEpX1q4dn--35" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;align=center;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="DXMoOa7pvSuEpX1q4dn--33" target="DXMoOa7pvSuEpX1q4dn--15" edge="1">
@@ -112,7 +112,7 @@
                         <mxPoint x="700" y="1015" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="DXMoOa7pvSuEpX1q4dn--58" value="检查【缓存的Record】与【入参的Record】是否匹配" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
+                <mxCell id="DXMoOa7pvSuEpX1q4dn--58" value="检查入参的【当前用户】与Store中的是否匹配，定时器ID是否匹配" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
                     <mxGeometry x="640" y="894" width="120" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="DXMoOa7pvSuEpX1q4dn--62" value="忽略查询结果&lt;br&gt;end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;align=center;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
