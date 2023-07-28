@@ -1,279 +1,279 @@
-<mxfile host="Electron" modified="2023-06-20T09:56:04.307Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.4.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" version="21.4.0" etag="uSQLg068wexGMzzJHVOC" type="device">
-  <diagram id="yc0IzqEK58tRtfggVM6u" name="第 1 页">
-    <mxGraphModel dx="1941" dy="1978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="62" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="2" target="4" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="280" y="190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="2" value="启动流程" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="290" y="170" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="3" value="&lt;h1&gt;本地归集流程&lt;/h1&gt;&lt;p&gt;分为：轮询归集状态的【等待列表】，和按文件依次上传的【上传列表】；&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="165" width="350" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="36" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="4" target="7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="59" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="4" target="37" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="4" value="【清理当前任务】" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="280" y="280" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="10" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="7" target="77" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="7" value="创建轮询【等待列表】定时器，在Record中存储定时器ID" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="80" y="400" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="13" value="" style="edgeStyle=none;html=1;startArrow=none;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="9" target="12" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="150" y="610" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="41" value="否" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="12" target="40" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="43" value="是" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="12" target="42" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="12" value="列表长度&amp;gt;0" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="100" y="770" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="16" target="18" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="16" value="创建归集" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="-465" y="110" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="101" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="17" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-515" y="700" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="-605" y="650" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="17" value="登录/切换登录" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="-665" y="110" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="27" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="18" target="26" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="18" value="初始化进程通信监听（once）" style="whiteSpace=wrap;html=1;strokeWidth=2;rounded=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="-465" y="200" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="21" value="【清理当前任务】+&lt;br&gt;【本地归集流程】" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=center;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="-565" y="700" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;align=center;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="23" target="24" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="23" value="注销登录" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="-265" y="110" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="24" value="【清理当前任务】" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=center;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="-255" y="310" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="25" value="&lt;h1&gt;【本地归集流程】触发场景&lt;/h1&gt;&lt;p&gt;1.登录/切换用户；2.创建归集；3.注销登录&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;align=center;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="-630" width="450" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="30" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="26" target="29" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="26" value="选择本地文件" style="whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;strokeWidth=2;rounded=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-465" y="290" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="32" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="29" target="31" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="29" value="（通过主进程通信）获取文件列表信息" style="whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;strokeWidth=2;rounded=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-465" y="390" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="34" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="31" target="33" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="31" value="提交文件列表信息，获取【归集ID】" style="whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;strokeWidth=2;rounded=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-465" y="490" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="100" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="33" target="21" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="33" value="本地缓存【等待列表】：包括归集ID+文件列表信息" style="whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;strokeWidth=2;rounded=1;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-465" y="590" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="65" value="" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="37" target="83" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="37" value="&lt;span style=&quot;&quot;&gt;获取【当前用户】：&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;用户id+牌照&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="520" y="400" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="40" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="250" y="780" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="45" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="42" target="81" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="150" y="910" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="42" value="异步：查询所有item的归集状态" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="80" y="910" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="47" style="edgeStyle=none;html=1;fontColor=default;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="81" target="46" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="970" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="48" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#46495D;labelBackgroundColor=none;" parent="47" vertex="1" connectable="0">
-          <mxGeometry x="-0.0704" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="50" value="是" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="81" target="51" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="140" y="1010" as="sourcePoint" />
-            <mxPoint x="140" y="1080" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="46" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
-          <mxGeometry x="260" y="1030" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="53" value="" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="51" target="52" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="54" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#46495D;labelBackgroundColor=none;" parent="53" vertex="1" connectable="0">
-          <mxGeometry x="-0.22" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="58" value="否" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="51" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint y="1210" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="51" value="接口正常返回数据" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
-          <mxGeometry x="90" y="1160" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="56" value="" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="52" target="55" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="52" value="将item移除【等待队列】并更新" style="whiteSpace=wrap;html=1;fontColor=#46495D;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
-          <mxGeometry x="80" y="1320" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="57" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="55" target="7" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint y="770" as="targetPoint" />
-            <Array as="points">
-              <mxPoint y="1450" />
-              <mxPoint y="430" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="55" value="对比处理数据，加入【上传队列】" style="whiteSpace=wrap;html=1;fontColor=#46495D;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
-          <mxGeometry x="80" y="1420" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="63" value="&lt;h1&gt;Q&amp;amp;A&amp;amp;note&lt;/h1&gt;&lt;p&gt;note1：【等待队列】已归集任务为单位，【上传队列】以文件为单位，每个单位中加入了【归集ID】，用户后续更改状态&lt;/p&gt;&lt;p&gt;Q：【等待队列】为什么在接口完成后检查用户是否匹配？&lt;/p&gt;&lt;p&gt;A：因为所有异步操作，是无法保证随【定时器】的清除而清除，从而可能导致重复的操作&lt;/p&gt;&lt;p&gt;Q：【上传队列】为什么没有检查用户是否匹配？&lt;/p&gt;&lt;p&gt;A：上传 和 修改归集状态，与路径和归集ID关联，不与用户信息直接关联&lt;/p&gt;&lt;p&gt;Q：【上传队列】为什么没有使用定时器&lt;/p&gt;&lt;p&gt;A：上传不需要轮询后端状态&lt;/p&gt;&lt;p&gt;Q：【如何控制重复触发&lt;/p&gt;&lt;p&gt;A：【等待队列】通过用户+定时器ID比对控制；&lt;/p&gt;&lt;p&gt;【上传队列】会将item从队列中“取出”，上传失败再重新放回去，所以即使多次启动任务，同一个item也不会被多个任务上传&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#46495D;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-345" y="739" width="343" height="430" as="geometry" />
-        </mxCell>
-        <mxCell id="68" value="存在" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="94" target="67" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="580" y="660" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="71" value="是" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="67" target="70" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="67" value="检验文件是否符合规范" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
-          <mxGeometry x="530" y="753" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="85" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="70" target="86" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="580" y="1120" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="70" value="异步：上传文件" style="whiteSpace=wrap;html=1;fontColor=#46495D;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
-          <mxGeometry x="520" y="897" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="79" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="77" target="78" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="77" value="等待【定时器】触发" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="80" y="500" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="80" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="78" target="9" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="78" value="获取【当前用户】：&lt;br style=&quot;&quot;&gt;用户id+牌照" style="whiteSpace=wrap;html=1;strokeWidth=2;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
-          <mxGeometry x="80" y="590" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="81" value="检查入参的【当前用户】与Store中的是否匹配，定时器ID是否匹配" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
-          <mxGeometry x="90" y="1010" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="9" value="获取【当前用户】的【等待列表】" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="80" y="680" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="84" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="83" target="94" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="580" y="600" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="83" value="获取【当前用户】的【上传队列】" style="whiteSpace=wrap;html=1;strokeWidth=2;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
-          <mxGeometry x="520" y="504" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="89" value="成功" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="86" target="97" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="580" y="1160" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="91" value="失败" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="86" target="90" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="86" value="调用接口：修改归集状态，将成功或失败写入" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="530" y="1001" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="93" value="未变动" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="97" target="37" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="520" y="1190" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="440" y="1196" />
-              <mxPoint x="440" y="430" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="92" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="90" target="97" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="640" y="1190" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="760" y="1196" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="90" value="（根据传入的storekey）&lt;br&gt;将文件信息重新缓存" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="700" y="1021" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="96" value="不存在" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="94" target="95" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="94" value="取出一个文件" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="530" y="609" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="95" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="700" y="629" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="99" value="变动" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="97" target="98" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="97" value="对比TaskKey是否变动" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="530" y="1146" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="98" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
-          <mxGeometry x="530" y="1290" width="100" height="60" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram id="yc0IzqEK58tRtfggVM6u" name="第 1 页">
+        <mxGraphModel dx="1759" dy="1933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="62" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="2" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="启动流程" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="170" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;h1&gt;本地归集流程&lt;/h1&gt;&lt;p&gt;分为：轮询归集状态的【等待列表】，和按文件依次上传的【上传列表】；&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="165" width="350" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="4" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="4" target="37" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="【清理当前任务】" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="7" target="77" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="创建轮询【等待列表】定时器，在Record中存储定时器ID" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="400" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="edgeStyle=none;html=1;startArrow=none;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="9" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="150" y="610" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="否" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="12" target="40" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="是" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="12" target="42" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="列表长度&amp;gt;0" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="770" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="16" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="创建归集" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="-465" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-515" y="700" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-605" y="650"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="登录/切换登录" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="-665" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="18" target="26" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="初始化进程通信监听（once）" style="whiteSpace=wrap;html=1;strokeWidth=2;rounded=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="-465" y="200" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="【清理当前任务】+&lt;br&gt;【本地归集流程】" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=center;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="-565" y="700" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;align=center;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="23" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="注销登录" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="-265" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="【清理当前任务】" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=center;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="-255" y="310" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;h1&gt;【本地归集流程】触发场景&lt;/h1&gt;&lt;p&gt;1.登录/切换用户；2.创建归集；3.注销登录&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;align=center;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="-630" width="450" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="26" target="29" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="选择本地文件" style="whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;strokeWidth=2;rounded=1;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-465" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="29" target="31" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="（通过主进程通信）获取文件列表信息" style="whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;strokeWidth=2;rounded=1;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-465" y="390" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="31" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="提交文件列表信息，获取【归集ID】" style="whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;strokeWidth=2;rounded=1;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-465" y="490" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="33" target="21" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="本地缓存【等待列表】：包括归集ID+文件列表信息" style="whiteSpace=wrap;html=1;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;strokeWidth=2;rounded=1;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-465" y="590" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="37" target="83" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;span style=&quot;&quot;&gt;获取【当前用户】：&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;用户id+牌照&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="400" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="780" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="42" target="81" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="150" y="910" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="异步：查询所有item的归集状态" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="910" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=none;html=1;fontColor=default;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="81" target="46" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="180" y="970" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#46495D;labelBackgroundColor=none;" parent="47" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0704" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="是" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="81" target="51" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140" y="1010" as="sourcePoint"/>
+                        <mxPoint x="140" y="1080" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="1030" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="51" target="52" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#46495D;labelBackgroundColor=none;" parent="53" vertex="1" connectable="0">
+                    <mxGeometry x="-0.22" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="58" value="否" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="51" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint y="1210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="接口正常返回数据" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="1160" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="52" target="55" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="将item移除【等待队列】并更新" style="whiteSpace=wrap;html=1;fontColor=#46495D;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="1320" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="55" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint y="770" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint y="1450"/>
+                            <mxPoint y="430"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="对比处理数据，加入【上传队列】" style="whiteSpace=wrap;html=1;fontColor=#46495D;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="1420" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&lt;h1&gt;Q&amp;amp;A&amp;amp;note&lt;/h1&gt;&lt;p&gt;note1：【等待队列】已归集任务为单位，【上传队列】以文件为单位，每个单位中加入了【归集ID】，用户后续更改状态&lt;/p&gt;&lt;p&gt;Q：【等待队列】为什么在接口完成后检查用户是否匹配？&lt;/p&gt;&lt;p&gt;A：因为所有异步操作，是无法保证随【定时器】的清除而清除，从而可能导致重复的操作&lt;/p&gt;&lt;p&gt;Q：【上传队列】为什么没有检查用户是否匹配？&lt;/p&gt;&lt;p&gt;A：上传 和 修改归集状态，与路径和归集ID关联，不与用户信息直接关联&lt;/p&gt;&lt;p&gt;Q：【上传队列】为什么没有使用定时器&lt;/p&gt;&lt;p&gt;A：上传不需要轮询后端状态&lt;/p&gt;&lt;p&gt;Q：【如何控制重复触发&lt;/p&gt;&lt;p&gt;A：【等待队列】通过用户+定时器ID比对控制；&lt;/p&gt;&lt;p&gt;【上传队列】会将item从队列中“取出”，上传失败再重新放回去，所以即使多次启动任务，同一个item也不会被多个任务上传&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontColor=#46495D;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-345" y="739" width="343" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="存在" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="94" target="67" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="660" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="71" value="是" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="67" target="70" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="检验文件是否符合规范" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="753" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="70" target="86" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="1120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" value="异步：上传文件" style="whiteSpace=wrap;html=1;fontColor=#46495D;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="897" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="77" target="78" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="等待【定时器】触发" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="500" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="78" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="获取【当前用户】：&lt;br style=&quot;&quot;&gt;用户id+牌照" style="whiteSpace=wrap;html=1;strokeWidth=2;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="590" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="检查入参的【当前用户】与Store中的是否匹配，定时器ID是否匹配" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="1010" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="获取【当前用户】的【等待列表】" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="680" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" style="edgeStyle=none;html=1;fontColor=default;labelBackgroundColor=none;strokeColor=#788AA3;" parent="1" source="83" target="94" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="83" value="获取【当前用户】的【上传队列】" style="whiteSpace=wrap;html=1;strokeWidth=2;fontColor=#46495D;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="504" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="成功" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="86" target="97" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="1160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="91" value="失败" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="86" target="90" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="调用接口：修改归集状态，将成功或失败写入" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="1001" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="未变动" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="97" target="37" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="520" y="1190" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="440" y="1196"/>
+                            <mxPoint x="440" y="430"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="90" target="97" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="1190" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="760" y="1196"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="90" value="(等待10s)（根据传入的storekey）&lt;br&gt;将文件信息重新缓存" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="1021" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="不存在" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="94" target="95" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="取出一个文件" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="609" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="629" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="变动" style="edgeStyle=none;html=1;labelBackgroundColor=none;strokeColor=#788AA3;fontColor=default;" parent="1" source="97" target="98" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="对比TaskKey是否变动" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="1146" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="end" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=none;fillColor=#B2C9AB;strokeColor=#788AA3;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="1290" width="100" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

@@ -176,10 +176,10 @@
                 <mxCell id="icT5uSbhz-Hysp3IrD6e-2" value="移除并更新缓存" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
                     <mxGeometry x="640" y="1370" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="icT5uSbhz-Hysp3IrD6e-9" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="icT5uSbhz-Hysp3IrD6e-6" target="icT5uSbhz-Hysp3IrD6e-8" edge="1">
+                <mxCell id="icT5uSbhz-Hysp3IrD6e-9" value="归集完成" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="icT5uSbhz-Hysp3IrD6e-6" target="icT5uSbhz-Hysp3IrD6e-8" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="icT5uSbhz-Hysp3IrD6e-11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="icT5uSbhz-Hysp3IrD6e-6" edge="1">
+                <mxCell id="icT5uSbhz-Hysp3IrD6e-11" value="归集中" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="icT5uSbhz-Hysp3IrD6e-6" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="570" y="1180" as="targetPoint"/>
                     </mxGeometry>
@@ -189,7 +189,15 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="icT5uSbhz-Hysp3IrD6e-6" value="&amp;nbsp;归集是否是完成状态" style="rhombus;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
+                <mxCell id="3" value="归集取消" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="icT5uSbhz-Hysp3IrD6e-6" target="icT5uSbhz-Hysp3IrD6e-2">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="820" y="1180"/>
+                            <mxPoint x="820" y="1400"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="icT5uSbhz-Hysp3IrD6e-6" value="检查归集状态" style="rhombus;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#EEEEEE;strokeColor=#FFFFFF;fontColor=#1A1A1A;" parent="1" vertex="1">
                     <mxGeometry x="660" y="1140" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="icT5uSbhz-Hysp3IrD6e-10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;strokeColor=#FFFFFF;fontColor=default;" parent="1" source="icT5uSbhz-Hysp3IrD6e-8" target="icT5uSbhz-Hysp3IrD6e-2" edge="1">

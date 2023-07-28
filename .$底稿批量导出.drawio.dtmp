@@ -1,0 +1,380 @@
+<mxfile host="Electron" modified="2023-07-27T07:58:10.896Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.4.0 Chrome/112.0.5615.204 Electron/24.5.1 Safari/537.36" version="21.4.0" etag="IfojTDK8FCcMAK0IQztR" type="device">
+  <diagram id="L0jcl5iLU8mDOesyFf5d" name="第 1 页">
+    <mxGraphModel dx="1114" dy="1978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="68" value="" style="edgeStyle=none;html=1;" parent="1" source="2" target="67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="创建任务" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="50" y="160" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="" style="edgeStyle=none;html=1;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="“进行中”或“等待中”" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5" vertex="1" connectable="0">
+          <mxGeometry x="0.0222" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="" style="edgeStyle=none;html=1;" parent="1" source="3" target="8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="完成" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9" vertex="1" connectable="0">
+          <mxGeometry x="0.0667" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3" value="【任务状态】" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="60" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="【外部状态】更新为“等待中”" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="40" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="启动任务" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="200" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="" style="edgeStyle=none;html=1;" parent="1" source="11" target="12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="取消任务" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="350" y="160" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="" style="edgeStyle=none;html=1;" parent="1" source="12" target="14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="渲染进程：调用取消任务接口" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="340" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="" style="edgeStyle=none;html=1;" parent="1" source="14" target="16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="【外部状态】更新为“等待中”" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="340" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="取消下载" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="340" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="" style="edgeStyle=none;html=1;" parent="1" source="18" target="21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="停止任务" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="520" y="160" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="" style="edgeStyle=none;html=1;" parent="1" source="21" target="22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="【外部状态】更新为“完成”" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="510" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="取消下载" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="510" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="&lt;h1&gt;【底稿批量导出流程】触发场景&lt;/h1&gt;&lt;div&gt;1.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;align=center;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+          <mxGeometry x="30" y="40" width="450" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="&lt;h1&gt;【底稿批量导出流程】&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=1;align=center;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+          <mxGeometry x="1097" width="450" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="" style="edgeStyle=none;html=1;" parent="1" source="26" target="27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="启动任务" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1267" y="140" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="" style="edgeStyle=none;html=1;" parent="1" source="27" target="29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="116" value="" style="edgeStyle=none;html=1;" parent="1" source="27" target="29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="接口获取任务队列" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1257" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="33" style="edgeStyle=none;html=1;" parent="1" source="29" target="32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="循环：执行【当前任务】" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1257" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="是" style="edgeStyle=none;html=1;" parent="1" source="32" target="34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="37" value="否" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="32" target="118" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1317" y="780" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="32" value="存在【外部状态】" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1267" y="470" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="38" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="34" target="118" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1377" y="810" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1487" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="34" value="同步到【任务状态】" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1427" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="121" target="112" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1317" y="850" as="sourcePoint" />
+            <mxPoint x="1317" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="114" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="40" vertex="1" connectable="0">
+          <mxGeometry x="-0.1935" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="42" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="121" target="41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1317" y="850" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="43" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="42" vertex="1" connectable="0">
+          <mxGeometry x="-0.0167" relative="1" as="geometry">
+            <mxPoint x="1" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="71" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="112" target="70" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1317" y="990" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47" value="" style="edgeStyle=none;html=1;" parent="1" source="41" target="46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="子流程：筛选下一个【任务】" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1397" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="49" value="" style="edgeStyle=none;html=1;" parent="1" source="46" target="48" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="50" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="49" vertex="1" connectable="0">
+          <mxGeometry x="-0.0833" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52" value="" style="edgeStyle=none;html=1;" parent="1" source="46" target="51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="52" vertex="1" connectable="0">
+          <mxGeometry x="-0.275" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46" value="存在【进行中】的任务" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1607" y="910" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="65" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="48" target="29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1707" y="720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1917" y="950" />
+              <mxPoint x="1910" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48" value="取出该任务作为【当前任务】" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1747" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="是" style="edgeStyle=none;html=1;" parent="1" source="51" target="54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="" style="edgeStyle=none;html=1;" parent="1" source="51" target="56" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="57" vertex="1" connectable="0">
+          <mxGeometry x="-0.2667" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51" value="存在【排队中】的任务" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1607" y="1050" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="" style="edgeStyle=none;html=1;" parent="1" source="54" target="58" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="接口更新【任务】为【进行中】" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+          <mxGeometry x="1747" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="是" style="edgeStyle=none;html=1;" parent="1" source="56" target="58" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="63" value="否" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="56" target="64" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1647" y="1330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="56" value="存在【等待中】的任务" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1607" y="1190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="66" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="58" target="27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1967" y="1030" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1977" y="1230" />
+              <mxPoint x="1970" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="58" value="【任务状态】更新为等待中" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1747" y="1200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="64" value="无导出任务，&lt;br&gt;结束流程" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1597" y="1320" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="69" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="67" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="67" value="渲染进程：根据选择阶段，创建任务记录" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="40" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="76" style="edgeStyle=none;html=1;" parent="1" source="70" target="73" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="70" value="循环：取出【当前分页】文件列表的下一个文件" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1147" y="1080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79" value="" style="edgeStyle=none;html=1;" parent="1" source="73" target="78" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="85" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="79" vertex="1" connectable="0">
+          <mxGeometry x="-0.16" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="91" value="否" style="edgeStyle=none;html=1;" parent="1" source="73" target="90" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="73" value="该文件是否存在" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1167" y="1190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="84" value="" style="edgeStyle=none;html=1;" parent="1" source="78" target="83" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="86" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="84" vertex="1" connectable="0">
+          <mxGeometry x="-0.0444" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="87" value="否" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="78" target="70" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1317" y="1360" />
+              <mxPoint x="1317" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="78" value="文件状态为【导出中】或【排队中】" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1167" y="1320" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="92" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="107" target="70" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1337" y="1590" />
+              <mxPoint x="1337" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="108" value="" style="edgeStyle=none;html=1;" parent="1" source="83" target="107" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="83" value="执行同步下载，细节省略" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1147" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="97" value="" style="edgeStyle=none;html=1;" parent="1" source="90" target="96" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="98" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="97" vertex="1" connectable="0">
+          <mxGeometry x="-0.0333" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="103" value="" style="edgeStyle=none;html=1;" parent="1" source="90" target="102" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="104" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="103" vertex="1" connectable="0">
+          <mxGeometry x="-0.1034" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="90" value="是否有下一页" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1007" y="1190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="99" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="96" target="70" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="887" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="96" value="获取【下一个分页】的文件列表" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="827" y="1200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="110" value="" style="edgeStyle=none;html=1;" parent="1" source="102" target="109" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="102" value="前台通知用户" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="987" y="1560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="107" value="接口更新【文件】为完成，以及成功失败原因" style="whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+          <mxGeometry x="1147" y="1560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="111" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="109" target="41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1487" y="1150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1457" y="1710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="109" value="执行下一个【任务】" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="987" y="1680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="112" value="子流程：下载下一个【下载文件】" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1147" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="120" value="【等待中】，需要更新列表" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="118" target="27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1157" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1110" y="650" />
+              <mxPoint x="1110" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="122" value="【进行中】" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="118" target="121" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="124" value="" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="118" target="126" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1094.1428571428573" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="125" value="【完成】" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="124" vertex="1" connectable="0">
+          <mxGeometry x="0.0025" y="-3" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="118" value="检查【任务状态】" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1267" y="600" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="121" value="存在【当前任务】" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1267" y="760" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="126" value="结束流程" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="770" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
